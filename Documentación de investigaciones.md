@@ -1,7 +1,7 @@
 Documento de investigaciones
 
 Estilos:
-- Se cambió el tema Minty a Litera. En realidad el tema que más me hubiese gustado ya sería Minty, pero como así se pedía, cambió. Usé este tema porque me parecía mejor en cuanto a UX (por tema de colores de los botones etc.). Investogué otros, pero no encontré ninguno que me haya convencido 100%. 
+- Se cambió el tema Minty a Litera. En realidad el tema que más me hubiese gustado ya sería Minty, pero como así se pedía, lo cambié. Usé este tema porque me parecía mejor en cuanto a UX (por tema de colores de los botones etc.). Investogué otros, pero no encontré ninguno que me haya convencido 100%. 
 - Cambié color del header y simbolito de la app a otro. Dejé simple el header con las funcionalidades que se iban a usar (ver landin)
 
 Página Landing:
