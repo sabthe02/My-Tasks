@@ -6,6 +6,9 @@ body {
     margin-bottom: 0;
 }
 
+.navbar.bg-dark {
+    background-color: #d292fc!important;
+}
 .nav.nav-pills > li {
     cursor: pointer;
 }
