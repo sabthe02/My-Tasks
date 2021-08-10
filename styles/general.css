@@ -1,3 +1,7 @@
+.navbar.bg-dark {
+    background-color: #d292fc!important;
+  }
+
 ::selection {
     background: #78c2ad3b;
 }
@@ -43,3 +47,15 @@
     left: -20px;
     bottom: -20px;
 }
+
+.btn-primary {
+    background-color:#6a00b1
+  }
+  
+.btn-primary {
+      border-color: #6a00b1;
+      border-top-color: rgb(106, 0, 177);
+      border-right-color: rgb(106, 0, 177);
+      border-bottom-color: rgb(106, 0, 177);
+      border-left-color: rgb(106, 0, 177);
+  
