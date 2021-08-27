@@ -1,5 +1,6 @@
 body {
-    padding-top: 4.5rem;
+    padding-top: 6rem;
+    background: -webkit-linear-gradient(left, #5d41ff, #fa4299)!important;
 }
 
 .card-title {
@@ -12,6 +13,12 @@ body {
 .nav.nav-pills > li {
     cursor: pointer;
 }
+
+
+.btn-secondary {
+    color: #fff;
+    background-color: #d292fc;
+    border-color: #d292fc;
 
 [contentEditable=true]:empty:not(:focus)::before {
     content:attr(data-placeholder)

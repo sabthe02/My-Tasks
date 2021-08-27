@@ -20,17 +20,12 @@
     <title>Home</title>
 </head>
 
-<body onload="initialLoad()">
+<body onload="initialLoad()" onload="verificarSesion()">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html" onclick ="logout()">
                 My Tasks <i class="bi bi-calendar-check"></i>
             </a>
-
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbar-collapse" aria-controls="navbar-collapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
             <div class="navbar-collapse collapse" id="navbar-collapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
@@ -41,14 +36,14 @@
                         <a class="nav-link" href="stats.html">Estadísticas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Salir</a>
+                        <a class="nav-link" href="index.html" onclick="logout()">Cerrar sesión</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main class="container mb-5">
+    <main class="container mb-5" data-infinite-scroll='{ "path": ".pagination__next", "append": ".post", "history": false, "scrollThreshold": 100 }'>
         <div class="bg-light p-4 rounded">
             <div class="input-group mb-4">
                 <input id="search-keywords" type="text" class="form-control" placeholder="Terminos de busqueda ...">
@@ -276,6 +271,9 @@
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
         async></script>
 
+    <!-- Infinite Scroll-->
+    <script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
+
     <!-- Chartsjs -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.1/dist/chart.min.js" integrity="sha256-GMN9UIJeUeOsn/Uq4xDheGItEeSpI5Hcfp/63GclDZk=" crossorigin="anonymous"></script>
 
@@ -288,8 +286,9 @@
     <script src="scripts/maps.js"></script>
 
     <!-- Script que incluye google maps y places -->
-    <!-- Changed Google Places key to my own -->
+    <!-- (cambiado Google Places al mío) -->
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7LF4OAOcIdBoN1RamZu2LKrOW_Af1oWQ&callback=googleMapsCallback&libraries=places"></script>
+
 </body>
 
 </html>

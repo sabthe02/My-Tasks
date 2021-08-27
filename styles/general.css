@@ -49,13 +49,11 @@
 }
 
 .btn-primary {
-    background-color:#6a00b1
-  }
-  
-.btn-primary {
-      border-color: #6a00b1;
-      border-top-color: rgb(106, 0, 177);
-      border-right-color: rgb(106, 0, 177);
-      border-bottom-color: rgb(106, 0, 177);
-      border-left-color: rgb(106, 0, 177);
-  
+    background-color:#6a00b1;
+    border-color: #6a00b1;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #fb6aae;
+    border-color: #fb6aae;

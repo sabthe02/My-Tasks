@@ -9,3 +9,14 @@ function hideLoader() {
 function toggleLoader() {
     document.querySelector('.loader-overlay').classList.toggle('d-block')
 }
+
+function verificarSesion() {
+    if (Boolean(localStorage.getItem('logeado')) !== true) {
+        window.location.href = '/index.html'
+    }
+}
+
+function logout() {
+    localStorage.clear()
+    window.location.href = '/index.html'
+}

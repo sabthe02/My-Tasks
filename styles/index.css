@@ -16,6 +16,7 @@
     text-decoration: none;
   }
   
+  }
   .title {
     text-align: center;
     color: #FFF;
@@ -23,7 +24,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 1vh;
     letter-spacing: 1px;
     padding: 20px;
   }
@@ -35,9 +36,9 @@
     -moz-background-clip: text;
     -webkit-background-clip: text;
     text-transform: uppercase;
-    font-size: 120px;
+    font-size: 90px;
     line-height: 1;
-    margin: 10px 0;
+    margin: 1px 0;
     font-weight: 700 !important;
   }
   
@@ -50,6 +51,6 @@
   }
 
  .item, img {
-     height: 50% !important;
+     height: 1% !important;
  }
 

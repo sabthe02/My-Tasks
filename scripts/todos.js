@@ -5,7 +5,8 @@ let todos = []
 showLoader()
 
 // Constantes globales
-const numberOfTasksToGenerate = 10
+
+const numberOfTasksToGenerate = Math.floor(Math.random() * 100) // Lo uso para generar un número randómico entre 1 y 100 de tareas en vez de uno fijo
 const todoViewModal = new bootstrap.Modal(document.getElementById('todo-view-modal'))
 const todoCreatorModal = new bootstrap.Modal(document.getElementById('todo-creator-modal'))
 
@@ -22,14 +23,8 @@ const priority = {
 function applySearchFilter() {
     // Obtenemos el valor de la caja de busqueda, le sacamos espacios de mas y pasamos a minusculas
 
-    // Alternativa 1 (1 linea)
-    // const keywords = document.getElementById('search-keywords').value.trim().toLowerCase()
+    const keywords = document.getElementById('search-keywords').value.trim().toLowerCase()
 
-    // Alternativa 2 (4 lineas)
-    const searchInputElement = document.getElementById('search-keywords')
-    let keywords = searchInputElement.value
-    keywords = keywords.trim()
-    keywords = keywords.toLowerCase()
 
     if (!keywords) {
         todos.forEach(todo => {
@@ -50,6 +45,7 @@ function applySearchFilter() {
             todo.shouldDisplay = true
         })
     }
+
 
     renderToDos()
 }
