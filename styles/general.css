@@ -51,6 +51,8 @@
 .btn-primary {
     background-color:#6a00b1;
     border-color: #6a00b1;
+    font-size:15px;
+    width: 175px
 }
 
 .btn-primary:hover {

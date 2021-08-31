@@ -50,14 +50,14 @@
             <div class="form-inner">
               <form class="login" onsubmit = "submitForm(event)">
                 <div class="field">
-                  <input type="text" id="email" placeholder="Dirección de e-mail" required>
+                  <input type="email" id="email" placeholder="Dirección de e-mail" required>
                   </div>
                   <div class="field">
                      <input type="password" id="password" placeholder="Contraseña" required>
                   </div>
                   <div class="field btn">
                      <div></div>
-                     <button class = "btn btn-primary btn-lg" onclick="login()">Iniciar sesión</button> 
+                     <button class = "btn btn-primary btn" onclick="login()">Iniciar sesión</button> 
 
                   </div>
                   <div class="signup-link">
@@ -66,17 +66,17 @@
                </form>
                <form class="signup" onsubmit = "submitForm(event)">
                   <div class="field">
-                     <input type="text" placeholder="Dirección de e-mail" required>
+                     <input type="email" id="emailRegistro" placeholder="Dirección de e-mail" required>
                   </div>
                   <div class="field">
-                     <input type="password" placeholder="Contraseña" required>
+                     <input type="password" id="passwordRegistro" placeholder="Contraseña" required>
                   </div>
                   <div class="field">
-                     <input type="password" placeholder="Confirmar contraseña" required>
+                     <input type="password" id="passwordRegistroRepeat" placeholder="Confirmar contraseña" required>
                   </div>
                   <div class="field btn">
                      <div></div>
-                     <button class = "btn btn-primary btn-lg" onclick="login()">Registrarse</button>
+                     <button class = "btn btn-primary btn" onclick="registro()">Registrarse</button>
 
                   </div>
                </form>
