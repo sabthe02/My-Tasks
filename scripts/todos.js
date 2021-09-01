@@ -56,9 +56,6 @@ function applySearchFilter() {
  */
 function applyTypeFilter(filterType) {
     switch (filterType) {
-        case 'MY_DAY':
-            // TODO: Aplicar filtro de tareas diarias
-            break
         case 'IMPORTANT':
             // TODO: Aplicar filtro de tareas marcadas como importantes
             break
@@ -69,6 +66,8 @@ function applyTypeFilter(filterType) {
             console.error('Filtro no soportado')
             break
     }
+
+    
 }
 
 // Obtiene la lista de tareas (actualmente hardcoded, posteriormente sera info desde el servidor)
@@ -148,14 +147,14 @@ function initialLoad() {
  */
 function renderToDos() {
     const todosContainer = document.getElementById('todos-container')
-    const todoTemplate = document.getElementById('todo-temlpate')
+    const todoTemplate = document.getElementById('todo-template')
 
     todosContainer.innerHTML = ''
 
     if (todos.length > 0) {
         for (let todosIndex = 0; todosIndex < todos.length; todosIndex++) {
             if (todos[todosIndex].shouldDisplay) {
-                // Creamos un clon a partir del elemento template "todo-temlpate"
+                // Creamos un clon a partir del elemento template "todo-template"
                 const todoClone = todoTemplate.content.cloneNode(true)
 
                 // Obtenemos los elementos

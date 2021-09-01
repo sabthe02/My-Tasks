@@ -43,17 +43,14 @@
         </div>
     </nav>
 
-    <main class="container mb-5" data-infinite-scroll='{ "path": ".pagination__next", "append": ".post", "history": false, "scrollThreshold": 100 }'>
+    <main class="container mb-5">
         <div class="bg-light p-4 rounded">
             <div class="input-group mb-4">
                 <input id="search-keywords" type="text" class="form-control" placeholder="Terminos de busqueda ...">
                 <button class="btn btn-secondary" type="button" onclick="applySearchFilter()">Buscar</button>
             </div>
 
-            <ul class="nav nav-pills nav-fill mb-4">
-                <li class="nav-item">
-                    <a class="nav-link active" onclick="applyTypeFilter('MY_DAY')">Mi día</a>
-                </li>
+            <ul class="nav nav-pills nav-fill mb-3">
                 <li class="nav-item">
                     <a class="nav-link" onclick="applyTypeFilter('IMPORTANT')">Importantes</a>
                 </li>
@@ -81,7 +78,7 @@
         </div>
     </div>
 
-    <button class="fab fab-fixed d-flex justify-content-center align-items-center bg-success"
+    <button class="fab fab-fixed d-flex justify-content-center align-items-center bg-primary"
         onclick="openTodoCreatorModal()">
         <i class="bi bi-plus"></i>
     </button>
@@ -215,7 +212,7 @@
     </div>
 
     <!-- Template de tarea (card) -->
-    <template id="todo-temlpate">
+    <template id="todo-template">
         <div class="col">
             <div class="card">
                 <div class="card-body">
@@ -270,9 +267,6 @@
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
         async></script>
-
-    <!-- Infinite Scroll-->
-    <script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
 
     <!-- Chartsjs -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.1/dist/chart.min.js" integrity="sha256-GMN9UIJeUeOsn/Uq4xDheGItEeSpI5Hcfp/63GclDZk=" crossorigin="anonymous"></script>

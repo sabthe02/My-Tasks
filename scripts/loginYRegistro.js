@@ -36,8 +36,12 @@ function registro() {
           alert('Usuario ya existente, por favor logearse')
     }
     
-    else {
+    else if (document.getElementById('passwordRegistro').value !== document.getElementById('passwordRegistroRepeat').value) {
         alert('Las contraseñas deben ser iguales')
+    }
+
+    else {
+      alert ('Por favor ingresar un correo válido, ejemplo: ejemplo@gmail.com')
     }
 }    
 
