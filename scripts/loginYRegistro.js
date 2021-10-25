@@ -27,19 +27,24 @@ function validateEmail(email)
         return re.test(email)
     }
 function registro() {
-    if (validateEmail(document.getElementById('emailRegistro').value) === true && document.getElementById('passwordRegistro').value === document.getElementById('passwordRegistroRepeat').value && localStorage.getItem('logeado') !=="true") {
-      localStorage.setItem('logeado', true)  
+    if (validateEmail(document.getElementById('emailRegistro').value) === true && document.getElementById('passwordRegistro').value === true && document.getElementById('passwordRegistro').value === document.getElementById('passwordRegistroRepeat').value && localStorage.getItem('logeado') !=="true") {
+      localStorage.setItem('logueado', true)  
       window.location.href = 'home.html'  
     }
     
-    else if (localStorage.getItem('logeado') ==="true") {
-          alert('Usuario ya existente, por favor logearse')
+    else if (localStorage.getItem('logueado') ==="true") {
+          alert('Usuario ya existente, por favor loguearse')
     }
     
     else if (document.getElementById('passwordRegistro').value !== document.getElementById('passwordRegistroRepeat').value) {
         alert('Las contraseñas deben ser iguales')
     }
 
+    else if (validateEmail(document.getElementById('emailRegistro').value) === true)
+    {
+      alert ('Por favor rellenar los campos faltanes')
+    }
+   
     else {
       alert ('Por favor ingresar un correo válido, ejemplo: ejemplo@gmail.com')
     }
